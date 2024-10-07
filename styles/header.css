@@ -2,6 +2,9 @@
     width: 24px;
     height: 24px;
     background-image: url("../imagens/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center; /*Essa é uma propriedade do background!*/
+
     display: inline-block; /*Se fosse só inline não permitiria os ajustes de altura!*/
 }
 
@@ -9,5 +12,14 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between; /*Foi cada um pro seu canto*/
-    
+    align-items: center; /*Ele alinhou os itens ao centro da linha*/
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
 }
