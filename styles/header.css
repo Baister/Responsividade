@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-between; /*Foi cada um pro seu canto*/
     align-items: center; /*Ele alinhou os itens ao centro da linha*/
+    position: relative; /*Alteração feita para ajustar o conteúdo que está saindo assim que o checkbox é marcado.
+    Position: relative libera outros atributos de posicionamento como top, bottom, left, right*/
 }
 
 .container {
@@ -22,4 +24,17 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+.lista-menu {
+    display: none; /*Sumiu com aquela lista que ficava aparecendo sem ele! E também não ocupa espaço nenhum*/
+    position: absolute;/*Alteração feita para ajustar o conteúdo que está saindo assim que o checkbox é marcado.
+    Position: absolute -->permite que você movimente o elemento de acordo com outro que veio antes ou pai  que tenha a position DIFERENTE de static que é a padrão. Então é para ele se movimentar de acordo com o cabeçalho. Ou seja, pro absolute funcionar teve que mexer no position do cabecalho*/
+    top: 100%; /*Ele tirou 100% do cabecalho e ficou pra baixo. Se fosse 50% ele estaria com metade da posição dentro do cabecalho!*/
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block; /*Agora quando clica aparece a lista! E quando clica dnv some com ela. :checked é uma pseudo classe, assim como :hover
+    O ~ é como se fosse um combinador css. Ele vai procurar outro elemento que vem em seguida do de antes. É tipo uma condicional do javascript
+    SE o container__botão estiver checked ele vai procurar outro que venha depois dele que tenha a classe lista-menu e vai botar DISPLAY:BLOCK nele, se não tivesse nenhuma com o lista-menu ele faria NADA*/
 }
