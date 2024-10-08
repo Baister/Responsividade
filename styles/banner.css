@@ -1,0 +1,16 @@
+.banner {
+    background: var(--azul-degrade); /*Se fosse apenas uma cor única você colocaria "background-color", mas como é linear gradiente*/
+    color: var(--branco);
+    text-align: center; /*Ele alinha todos os elementos INLINE não somente os de texto*/
+    padding: 2.5em 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0; /*Deu um espaçamento bacana!*/
+}
