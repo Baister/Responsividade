@@ -48,6 +48,8 @@
 
 .lista-menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
+    
 }
 
 .lista-menu__link {
@@ -57,4 +59,8 @@
     background-clip: text; /*Isso foi copiado e colado do Figma, para deixar a cor desse jeito.*/
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.container__botao {
+    display: none; /*Para sumir aquela caixa de seleção, ela ainda tá ali e não tá ocupando espaço no css*/
 }
