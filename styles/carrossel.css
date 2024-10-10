@@ -1,0 +1,22 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase; /*Deixa em maiúsculo.*/
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+} /*Vai ser importado um plugin chamado SwipeJs*/
+
+.swiper-slide img { /*Vai pegar todas as imgs que estão dentro do swiper-slide!*/
+    width: 100%;
+} 
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial; /*Posição inicial, daquelas bolinhas de navegação*/
+    margin: 0.5em 0;
+}
