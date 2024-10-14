@@ -1,6 +1,7 @@
 @import url("styles/header.css"); /*Foi feito assim para não encher de link no  head. E segundo, não vai fazer um carregamento por vez, vai ser todo junto*/
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
+@import url("styles/topico.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
